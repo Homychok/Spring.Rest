@@ -16,18 +16,10 @@ private EmployeeDAO employeeDAO;
         this.employeeDAO = employeeDAO;
     }
 
-//    public EmployeeDAO getEmployeeDAO() {
-//        return employeeDAO;
-//    }
-//
-//    public void setEmployeeDAO(EmployeeDAO employeeDAO) {
-//        this.employeeDAO = employeeDAO;
-//    }
-
     @Override
     @Transactional
-    public List<Employee> getEmployees() {
-        return employeeDAO.getEmployees();
+    public List<Employee> getEmployee() {
+        return employeeDAO.getEmployee();
     }
 
     @Override
